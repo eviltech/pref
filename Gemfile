@@ -10,6 +10,7 @@ gem 'devise'
 
 # Database
 gem 'mysql2'
+gem 'pg'
 
 # View engine
 gem 'haml'
