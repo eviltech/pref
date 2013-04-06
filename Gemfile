@@ -14,6 +14,9 @@ gem 'mysql2'
 # View engine
 gem 'haml'
 
+# State machine
+gem 'aasm'
+
 # JS engine
 gem 'therubyracer'
 
