@@ -35,6 +35,10 @@ end
 gem 'jquery-rails'
 gem 'bootstrap-sass'
 
+group :development do
+  gem 'pry-rails'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 

@@ -3,3 +3,22 @@
 
 en:
   hello: "Hello world"
+  games:
+    index:
+      title: "Games"
+      table:
+        id: "ID"
+        created_at: "Creation date"
+        players: "Players count"
+        state: "State"
+        ratio: "Wist price"
+        actions: "Actions"
+      create: "Create new game"
+    new:
+      title: "Create new game"
+      save: "Save"
+      cancel: "Cancel"
+  layouts:
+    application:
+      logout: "Logout"
+      login: "Login"

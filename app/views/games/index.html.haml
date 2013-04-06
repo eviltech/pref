@@ -1,0 +1,25 @@
+%h1= t('games.index.title')
+
+%table.table.table-hover
+  %thead
+    %th= t('.table.id')
+    %th= t('.table.created_at')
+    %th= t('.table.players')
+    %th= t('.table.state')
+    %th= t('.table.ratio')
+    %th= t('.table.actions')
+  %tbody
+    - @games.each do |game|
+      %tr
+        %td= game.id
+        %td= l(game.created_at, format: :long)
+        %td= game.users.count
+        %td= game.aasm_state
+        %td= game.ratio
+        %td
+          = link_to 'Show', game
+          = link_to 'Edit', edit_game_path(game)
+          = link_to 'Destroy', game, method: :delete, data: { confirm: 'Are you sure?' }
+
+.row.align-center
+  = link_to t('.create'), new_game_path, class: 'btn btn-large'

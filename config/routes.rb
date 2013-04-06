@@ -1,7 +1,9 @@
 Pref::Application.routes.draw do
   devise_for :users
 
-  root to: 'home#index'
+  resources :games
+
+  root to: 'games#index'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

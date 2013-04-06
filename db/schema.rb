@@ -11,12 +11,12 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130406170632) do
+ActiveRecord::Schema.define(:version => 20130406181017) do
 
   create_table "games", :force => true do |t|
     t.integer  "ratio"
     t.datetime "run_date"
-    t.string   "state"
+    t.string   "aasm_state"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

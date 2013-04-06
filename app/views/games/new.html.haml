@@ -1,0 +1,9 @@
+%h1= t('.title')
+
+= form_for @game do |f|
+  = f.label :ratio
+  = f.text_field :ratio
+
+  .form-actions
+    = link_to t('.cancel'), games_path, class: 'btn'
+    = f.submit t('.save'), class: 'btn btn-primary'
